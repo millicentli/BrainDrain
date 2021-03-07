@@ -8,12 +8,12 @@ How this works:
 """
 
 from psychopy import visual, core
-from stimulus_experiment import *
+from stimulus_experiments import *
 
 if __name__ == '__main__':
     # Parameters
-    text = "want to test this"
+    text = "don't want to test this"
     seed = 40
-    stimmy = StimulusExperiment(text, seed)
+    stimmy = MultiStimulusExperiment(text, seed)
     stimmy.run_test()
     
